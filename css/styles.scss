@@ -8,6 +8,7 @@ $color-azul: #64bee6;
 $color-rojo: #dc3c3a;
 $color-naranja: #ff8c24;
 $color-textos: #6b6b6b;
+$color-bg-black: #272727;
 * {
   padding: 0;
   margin: 0;
@@ -453,6 +454,8 @@ ul {
     letter-spacing: -1px;
   }
 }
+
+//QUERYS SECCION NOSOTROS
 @media (min-width: 768px) {
   .about {
     max-width: 1320px;
@@ -470,5 +473,62 @@ ul {
       padding: 0px 20px;
       max-width: 100%;
     }
+  }
+}
+
+//INICIO SECCION INFO
+.info {
+  background: $color-bg-black;
+  color: white;
+  .contenedor-gral {
+    padding-bottom: 100px;
+  }
+  .carta-info {
+    @include flexbox(row, flex-start, flex-start);
+    max-width: 430px;
+    margin: 0 auto;
+    padding-top: 15px;
+  }
+  .faas-info {
+    width: 55px;
+    height: 100%;
+    @include flexbox(row, flex-start, flex-start);
+  }
+  .contenido-info {
+    padding: 0px 25px;
+    @include flexbox(column, flex-start, flex-start);
+  }
+  .titulos-info {
+    font-family: $fuente-textos;
+    font-weight: 700;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+  }
+  .textos-comunes {
+    color: white;
+    line-height: 1.6;
+    margin: 15px 0px;
+    max-width: 340px;
+  }
+  .btn-info {
+    padding-left: 0;
+    color: $color-rojo;
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) {
+  .info {
+    .contenedor-gral {
+      @include flexbox(row, flex-start, flex-start);
+      max-width: 1320px;
+      margin: 0 auto;
+    }
+  }
+  .carta-info {
+    width: 33%;
+    padding: 15px 15px 0px;
+  }
+  .contenido-info {
+    width: calc(100% - 50px);
   }
 }

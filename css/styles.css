@@ -667,4 +667,114 @@ ul {
     max-width: 100%;
   }
 }
+
+.info {
+  background: #272727;
+  color: white;
+}
+
+.info .contenedor-gral {
+  padding-bottom: 100px;
+}
+
+.info .carta-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 430px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+.info .faas-info {
+  width: 55px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.info .contenido-info {
+  padding: 0px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.info .titulos-info {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 1.3rem;
+}
+
+.info .textos-comunes {
+  color: white;
+  line-height: 1.6;
+  margin: 15px 0px;
+  max-width: 340px;
+}
+
+.info .btn-info {
+  padding-left: 0;
+  color: #dc3c3a;
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .info .contenedor-gral {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    max-width: 1320px;
+    margin: 0 auto;
+  }
+  .carta-info {
+    width: 33%;
+    padding: 15px 15px 0px;
+  }
+  .contenido-info {
+    width: calc(100% - 50px);
+  }
+}
 /*# sourceMappingURL=styles.css.map */

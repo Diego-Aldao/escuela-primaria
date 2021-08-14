@@ -29,11 +29,15 @@ ul {
   font-family: $fuente-textos;
   font-weight: 500;
 }
-.textos-comunes {
+.textos-comunes,
+.texto-grande {
   font-family: $fuente-textos;
   font-size: 1rem;
   line-height: 1.8;
   color: $color-textos;
+}
+.texto-grande {
+  font-size: 1.1rem;
 }
 
 @mixin flexbox($direction, $align, $justify) {
@@ -44,16 +48,16 @@ ul {
 }
 
 .contenedor-gral {
-  padding: 100px 30px;
+  padding: 100px 30px 50px;
 }
 @media (min-width: 1024px) {
   .contenedor-gral {
-    padding: 100px 60px;
+    padding: 100px 60px 50px;
   }
 }
 @media (min-width: 1380px) {
   .contenedor-gral {
-    padding: 100px 0px;
+    padding: 100px 0px 50px;
   }
 }
 
@@ -407,7 +411,7 @@ ul {
     padding-top: 0px;
     .carta-contenido-principal {
       margin: 0px;
-      width: 27vw;
+      width: 28vw;
       max-width: 400px;
       position: relative;
       top: -50px;
@@ -416,6 +420,55 @@ ul {
         min-height: 130px;
         height: 18vw;
       }
+    }
+  }
+}
+
+//INICIO SECCION NOSOTROS
+.about {
+  padding-top: 0px;
+  .texto-grande {
+    padding: 0px 15px;
+    max-width: 430px;
+    margin: 0 auto 20px;
+  }
+  .headers-principales {
+    max-width: 430px;
+    margin: 0 auto;
+  }
+}
+.headers-principales {
+  width: 100%;
+  height: 100px;
+  @include flexbox(row, flex-start, flex-start);
+  .fa {
+    margin-right: 15px;
+  }
+  .titulos-headers {
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: $fuente-textos;
+    margin-top: 25px;
+    letter-spacing: -1px;
+  }
+}
+@media (min-width: 768px) {
+  .about {
+    max-width: 1320px;
+    margin: 0 auto;
+    @include flexbox(row, flex-start, flex-start);
+    .headers-principales {
+      min-width: 220px;
+      max-width: 30%;
+      margin: 0 auto 0 0;
+    }
+    .contenido-about {
+      width: 70%;
+    }
+    .texto-grande {
+      padding: 0px 20px;
+      max-width: 100%;
     }
   }
 }

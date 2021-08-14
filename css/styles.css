@@ -25,26 +25,31 @@ ul {
   font-weight: 500;
 }
 
-.textos-comunes {
+.textos-comunes,
+.texto-grande {
   font-family: "Poppins", sans-serif;
   font-size: 1rem;
   line-height: 1.8;
   color: #6b6b6b;
 }
 
+.texto-grande {
+  font-size: 1.1rem;
+}
+
 .contenedor-gral {
-  padding: 100px 30px;
+  padding: 100px 30px 50px;
 }
 
 @media (min-width: 1024px) {
   .contenedor-gral {
-    padding: 100px 60px;
+    padding: 100px 60px 50px;
   }
 }
 
 @media (min-width: 1380px) {
   .contenedor-gral {
-    padding: 100px 0px;
+    padding: 100px 0px 50px;
   }
 }
 
@@ -573,7 +578,7 @@ ul {
   }
   .contenido-principal .carta-contenido-principal {
     margin: 0px;
-    width: 27vw;
+    width: 28vw;
     max-width: 400px;
     position: relative;
     top: -50px;
@@ -582,6 +587,84 @@ ul {
   .contenido-principal .carta-contenido-principal .img-carta {
     min-height: 130px;
     height: 18vw;
+  }
+}
+
+.about {
+  padding-top: 0px;
+}
+
+.about .texto-grande {
+  padding: 0px 15px;
+  max-width: 430px;
+  margin: 0 auto 20px;
+}
+
+.about .headers-principales {
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.headers-principales {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.headers-principales .fa {
+  margin-right: 15px;
+}
+
+.headers-principales .titulos-headers {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin-top: 25px;
+  letter-spacing: -1px;
+}
+
+@media (min-width: 768px) {
+  .about {
+    max-width: 1320px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .about .headers-principales {
+    min-width: 220px;
+    max-width: 30%;
+    margin: 0 auto 0 0;
+  }
+  .about .contenido-about {
+    width: 70%;
+  }
+  .about .texto-grande {
+    padding: 0px 20px;
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1076,4 +1076,135 @@ ul {
     margin-left: 15px;
   }
 }
+
+.clases .contenedor-gral {
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.clases .headers-principales {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+
+.clases .titulos-headers {
+  font-size: 1.8rem;
+}
+
+.clases .fa img {
+  width: 85px;
+  height: 85px;
+}
+
+.clases .cartas-clases {
+  width: 100%;
+  text-align: center;
+  margin: 60px 0px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+.clases .img-clases {
+  width: 100%;
+  min-height: 150px;
+  height: 50vw;
+  max-height: 250px;
+}
+
+.clases .titulos-clases {
+  font-weight: 800;
+  color: #dc3c3a;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin: 25px 0px 15px;
+  padding: 0px 20px;
+}
+
+.clases .maestra,
+.clases .grado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 20px;
+}
+
+.clases .negrita {
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.clases .btn-clases {
+  color: #64bee6;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.clases .btn-seccion-clases {
+  background: #64bee6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .clases .contenedor-gral {
+    max-width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 1320px;
+  }
+  .clases .headers-principales {
+    max-width: 100%;
+  }
+  .clases .cartas-clases {
+    width: 30%;
+    max-width: 380px;
+  }
+  .clases .img-clases {
+    min-height: 120px;
+    height: 18vw;
+  }
+  .clases .contenedor-btn-principal {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

@@ -538,6 +538,7 @@ ul {
 }
 
 //INICIO SECCION NOTICIAS/EVENTOS
+//INICIO NOTICIAS
 .noticias {
   background: $color-azul;
   max-width: 430px;
@@ -620,6 +621,8 @@ ul {
     border-radius: 5px;
   }
 }
+
+//INICIO EVENTOS
 .eventos {
   background: $color-bg-white;
   .header-eventos {
@@ -729,6 +732,92 @@ ul {
     }
     .btn-eventos {
       margin-left: 15px;
+    }
+  }
+}
+
+//INICIO SECCION CLASES
+.clases {
+  .contenedor-gral {
+    max-width: 430px;
+    margin: 0 auto;
+  }
+  .headers-principales {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+  .titulos-headers {
+    font-size: 1.8rem;
+  }
+  .fa {
+    img {
+      width: 85px;
+      height: 85px;
+    }
+  }
+  .cartas-clases {
+    width: 100%;
+    text-align: center;
+    margin: 60px 0px;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 5px;
+  }
+  .img-clases {
+    width: 100%;
+    min-height: 150px;
+    height: 50vw;
+    max-height: 250px;
+  }
+  .titulos-clases {
+    font-weight: 800;
+    color: $color-rojo;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    margin: 25px 0px 15px;
+    padding: 0px 20px;
+  }
+  .maestra,
+  .grado {
+    @include flexbox(row, center, center);
+    padding: 0px 20px;
+  }
+  .negrita {
+    font-weight: 800;
+    text-transform: capitalize;
+  }
+  .btn-clases {
+    color: $color-azul;
+    margin-top: 15px;
+    font-weight: 500;
+  }
+  .btn-seccion-clases {
+    background: $color-azul;
+    @include flexbox(row, center, center);
+  }
+}
+//INICIO QUERYS CLASES
+@media (min-width: 768px) {
+  .clases {
+    .contenedor-gral {
+      max-width: 100%;
+      flex-wrap: wrap;
+      @include flexbox(row, flex-start, space-between);
+      max-width: 1320px;
+    }
+    .headers-principales {
+      max-width: 100%;
+    }
+    .cartas-clases {
+      width: 30%;
+      max-width: 380px;
+    }
+    .img-clases {
+      min-height: 120px;
+      height: 18vw;
+    }
+    .contenedor-btn-principal {
+      width: 100%;
     }
   }
 }

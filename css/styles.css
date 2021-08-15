@@ -37,6 +37,33 @@ ul {
   font-size: 1.1rem;
 }
 
+.logo {
+  height: 40px;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.9rem;
+  text-transform: capitalize;
+  font-family: "Caveat", cursive;
+  color: #dc3c3a;
+  letter-spacing: -1px;
+}
+
+.titulo-naranja {
+  color: #ff8c24;
+}
+
 .contenedor-gral {
   padding: 100px 30px 50px;
 }
@@ -85,29 +112,6 @@ ul {
   margin: 0 auto;
 }
 
-.navegacion-principal .logo {
-  height: 40px;
-  margin-right: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-size: 1.9rem;
-  text-transform: capitalize;
-  font-family: "Caveat", cursive;
-  color: #dc3c3a;
-  letter-spacing: -1px;
-}
-
 .navegacion-principal .buscador,
 .navegacion-principal .menu-hamburguesa {
   height: 25px;
@@ -141,10 +145,6 @@ ul {
   height: 2px;
   background: black;
   margin: 2.5px 0px;
-}
-
-.navegacion-principal .titulo-naranja {
-  color: #ff8c24;
 }
 
 .btn-principal {
@@ -1494,6 +1494,158 @@ ul {
   }
   .galeria .img-galeria:nth-child(1) {
     display: none;
+  }
+}
+
+.footer-principal {
+  background: black;
+  color: white;
+}
+
+.footer-principal .contenedor-gral {
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.footer-principal .cartas-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 70px;
+}
+
+.footer-principal .carta-main .textos-comunes {
+  color: #ababab;
+  margin-bottom: 0;
+}
+
+.footer-principal .carta-main .numero-footer,
+.footer-principal .carta-main .correo-footer {
+  color: white;
+  margin-bottom: 10px;
+  text-transform: lowercase;
+}
+
+.footer-principal .logo {
+  font-size: 2.7rem;
+  margin-bottom: 40px;
+}
+
+.footer-principal .textos-comunes {
+  text-transform: capitalize;
+  color: #8d8d8d;
+  margin-bottom: 8px;
+}
+
+.footer-principal .numero-footer {
+  margin-top: 20px;
+}
+
+.footer-principal .texto-grande {
+  color: white;
+  font-weight: 800;
+  text-transform: capitalize;
+  padding-bottom: 5px;
+}
+
+.footer-principal .linea-carta-footer {
+  background: #dc3c3a;
+  width: 100%;
+  height: 3px;
+  margin: 5px 0px 20px;
+}
+
+.footer-principal .redes-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 10px;
+}
+
+.footer-principal .link-redes-footer {
+  width: 35px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  color: #dc3c3a;
+  font-size: 1.3rem;
+}
+
+@media (min-width: 768px) {
+  .footer-principal .logo {
+    font-size: clamp(2rem, 4vw, 2.7rem);
+  }
+  .footer-principal .contenedor-gral {
+    max-width: 1320px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer-principal .cartas-footer {
+    width: 25%;
+    padding-right: 30px;
+  }
+  .footer-principal .else-footer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .footer-principal .copy-footer {
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */

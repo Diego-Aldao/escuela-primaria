@@ -980,3 +980,39 @@ ul {
     }
   }
 }
+
+//INICIO SECCION GALERIA
+.galeria {
+  width: 100%;
+  background: black;
+  @include flexbox(column, flex-start, flex-start);
+  .img-galeria {
+    width: 100%;
+    height: 80vw;
+    border: 1px solid white;
+  }
+}
+
+//INICIO QUERYS GALERIA
+@media (min-width: 470px) {
+  .galeria {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .img-galeria {
+      width: 50%;
+      height: 50vw;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .galeria {
+    .img-galeria {
+      flex: 1;
+      height: 20vw;
+      max-height: 480px;
+    }
+    .img-galeria:nth-child(1) {
+      display: none;
+    }
+  }
+}

@@ -14,11 +14,16 @@ $color-txt-black: #242424;
 $color-bg-white: #f5f5f5;
 $color-txt-footer: #ababab;
 $color-txt-footer-dos: #8d8d8d;
+$color-bg-flotante: #1f1f1f;
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: all 0.3s;
+}
+body{
+  min-width: 320px;
 }
 
 //MIXINS
@@ -69,6 +74,13 @@ ul {
 
 .contenedor-gral {
   padding: 100px 30px 50px;
+  max-width: 470px;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .contenedor-gral {
+    max-width: 1320px;
+  }
 }
 @media (min-width: 1024px) {
   .contenedor-gral {
@@ -172,6 +184,9 @@ ul {
       margin-right: 10px;
       font-size: 0.8rem;
     }
+  }
+  .telefono-nav-desktop {
+    margin-right: auto;
   }
   .redes-nav-desktop {
     width: 200px;
@@ -359,7 +374,9 @@ ul {
 }
 
 //INICIO CONTENIDO PRINCIPAL
-
+.contenido-principal {
+  background: white;
+}
 .carta-contenido-principal {
   width: 100%;
   max-width: 430px;
@@ -419,11 +436,11 @@ ul {
 }
 @media (min-width: 768px) {
   .contenido-principal {
-    position: relative;
-    @include flexbox(row, flex-start, space-between);
-    max-width: 1320px;
-    margin: 0 auto;
-    padding-top: 0px;
+    .contenedor-gral {
+      position: relative;
+      @include flexbox(row, flex-start, space-between);
+      padding-top: 0px;
+    }
     .carta-contenido-principal {
       margin: 0px;
       width: 28vw;
@@ -534,16 +551,14 @@ ul {
   .info {
     .contenedor-gral {
       @include flexbox(row, flex-start, flex-start);
-      max-width: 1320px;
-      margin: 0 auto;
     }
-  }
-  .carta-info {
-    width: 33%;
-    padding: 15px 15px 0px;
-  }
-  .contenido-info {
-    width: calc(100% - 50px);
+    .contenido-info {
+      width: calc(100% - 50px);
+    }
+    .carta-info {
+      width: 33%;
+      padding: 15px 15px 0px;
+    }
   }
 }
 
@@ -763,10 +778,6 @@ ul {
 }
 //INICIO SECCION CLASES
 .clases {
-  .contenedor-gral {
-    max-width: 430px;
-    margin: 0 auto;
-  }
   .headers-principales {
     flex-direction: column;
     align-items: center;
@@ -811,6 +822,9 @@ ul {
     @include flexbox(row, center, center);
     padding: 0px 20px;
   }
+  .textos-comunes {
+    text-transform: capitalize;
+  }
   .negrita {
     font-weight: 800;
     text-transform: capitalize;
@@ -830,10 +844,8 @@ ul {
 @media (min-width: 768px) {
   .clases {
     .contenedor-gral {
-      max-width: 100%;
       flex-wrap: wrap;
       @include flexbox(row, flex-start, space-between);
-      max-width: 1320px;
     }
     .headers-principales {
       max-width: 100%;
@@ -853,8 +865,6 @@ ul {
 .maestras {
   background: #8ed8f8;
   .contenedor-gral {
-    max-width: 470px;
-    margin: 0 auto;
     .headers-principales {
       flex-direction: column;
       align-items: center;
@@ -918,10 +928,8 @@ ul {
 @media (min-width: 768px) {
   .maestras {
     .contenedor-gral {
-      max-width: 100%;
       flex-wrap: wrap;
       @include flexbox(row, flex-start, space-between);
-      max-width: 1320px;
     }
     .headers-principales {
       max-width: 100%;
@@ -944,10 +952,6 @@ ul {
   background: url("../images/testimonial-bg.jpg") center / cover;
   color: white;
   text-align: center;
-  .contenedor-gral {
-    max-width: 430px;
-    margin: 0 auto;
-  }
   .header-testimonios {
     @include flexbox(column, center, flex-start);
     height: auto;
@@ -985,7 +989,8 @@ ul {
   .img-autor {
     width: 60px;
     height: 60px;
-    background: black;
+    background: url("../images/testimonios/testimonial-1-150x150.jpg") center /
+      cover;
     border-radius: 50%;
     margin-right: 20px;
   }
@@ -1075,10 +1080,6 @@ ul {
 .footer-principal {
   background: black;
   color: white;
-  .contenedor-gral {
-    max-width: 430px;
-    margin: 0 auto;
-  }
   .cartas-footer {
     @include flexbox(column, flex-start, flex-start);
     margin-bottom: 70px;
@@ -1137,13 +1138,12 @@ ul {
 
 //INICIO QUERYS FOOTER
 
-@media (min-width: 768px) {
+@media (min-width: 850px) {
   .footer-principal {
     .logo {
       font-size: clamp(2rem, 4vw, 2.7rem);
     }
     .contenedor-gral {
-      max-width: 1320px;
       @include flexbox(row, flex-start, flex-start);
       flex-wrap: wrap;
     }
@@ -1171,4 +1171,59 @@ ul {
   background: black;
   color: white;
   @include flexbox(row, center, center);
+}
+
+.flotante-movil {
+  width: 250px;
+  height: 100%;
+  background: $color-bg-flotante;
+  color: $color-textos;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  padding: 50px 45px;
+  .btn-cerrar-flotante {
+    width: 20px;
+    height: 20px;
+    @include flexbox(row, center, center);
+    position: relative;
+  }
+  .linea-btn-cerrar {
+    width: 100%;
+    height: 2px;
+    background: $color-textos;
+    transform: rotate(45deg);
+    position: absolute;
+  }
+  .linea-btn-cerrar:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+  .contenido-flotante {
+    width: 100%;
+    @include flexbox(column, flex-start, flex-start);
+    margin-top: 50px;
+  }
+  .link-flotante-movil {
+    padding: 18px 0px;
+    text-transform: uppercase;
+    border-bottom: 1px solid $color-textos;
+    width: 100%;
+    @include flexbox(row, center, space-between);
+    font-weight: 800;
+    font-size: 12px;
+  }
+  .texto-pequeño:nth-child(1) {
+    color: white;
+  }
+}
+@media (min-width: 550px) {
+  .flotante-movil {
+    width: 350px;
+  }
+}
+@media (min-width: 1024px) {
+  .flotante-movil {
+    display: none;
+  }
 }

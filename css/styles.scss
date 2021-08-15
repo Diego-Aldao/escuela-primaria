@@ -900,3 +900,83 @@ ul {
     }
   }
 }
+
+//INICIO SECCION TESTIMONIOS
+
+.testimonios {
+  background: $color-rojo;
+  color: white;
+  text-align: center;
+  .contenedor-gral {
+    max-width: 430px;
+    margin: 0 auto;
+  }
+  .header-testimonios {
+    @include flexbox(column, center, flex-start);
+    height: auto;
+    margin-bottom: 35px;
+  }
+  .sub-testimonios {
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  .titulos-headers {
+    font-size: 1.9rem;
+  }
+  .texto-grande {
+    color: white;
+    font-size: 1.15rem;
+    font-style: italic;
+    text-align: justify;
+  }
+  .fa-testimonio {
+    color: $color-azul;
+    font-size: 1.6rem;
+    margin: 40px 0px 50px;
+    display: block;
+  }
+  .autor-testimonio {
+    width: 100%;
+    @include flexbox(row, center, center);
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+  .img-autor {
+    width: 60px;
+    height: 60px;
+    background: black;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .datos-autor {
+    .textos-comunes {
+      text-align: left;
+      color: white;
+      text-transform: capitalize;
+    }
+    .textos-comunes:nth-child(1) {
+      font-weight: 800;
+      margin-top: 10px;
+    }
+    .textos-comunes:nth-child(2) {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+//INICIO QUERYS TESTIMONIOS
+
+@media (min-width: 768px) {
+  .testimonios {
+    .contenedor-gral {
+      max-width: 850px;
+    }
+    .texto-grande {
+      text-align: center;
+    }
+  }
+}

@@ -1336,4 +1336,112 @@ ul {
     height: 18vw;
   }
 }
+
+.testimonios {
+  background: #dc3c3a;
+  color: white;
+  text-align: center;
+}
+
+.testimonios .contenedor-gral {
+  max-width: 430px;
+  margin: 0 auto;
+}
+
+.testimonios .header-testimonios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  height: auto;
+  margin-bottom: 35px;
+}
+
+.testimonios .sub-testimonios {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.testimonios .titulos-headers {
+  font-size: 1.9rem;
+}
+
+.testimonios .texto-grande {
+  color: white;
+  font-size: 1.15rem;
+  font-style: italic;
+  text-align: justify;
+}
+
+.testimonios .fa-testimonio {
+  color: #64bee6;
+  font-size: 1.6rem;
+  margin: 40px 0px 50px;
+  display: block;
+}
+
+.testimonios .autor-testimonio {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.testimonios .img-autor {
+  width: 60px;
+  height: 60px;
+  background: black;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.testimonios .datos-autor .textos-comunes {
+  text-align: left;
+  color: white;
+  text-transform: capitalize;
+}
+
+.testimonios .datos-autor .textos-comunes:nth-child(1) {
+  font-weight: 800;
+  margin-top: 10px;
+}
+
+.testimonios .datos-autor .textos-comunes:nth-child(2) {
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .testimonios .contenedor-gral {
+    max-width: 850px;
+  }
+  .testimonios .texto-grande {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

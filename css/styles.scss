@@ -878,18 +878,6 @@ ul {
       margin-top: 15px;
     }
   }
-  .cartas-maestras {
-    width: 100%;
-    background: white;
-    border-bottom: 5px solid #4ec4f7;
-    margin: 50px 0px;
-  }
-  .img-maestra {
-    width: 100%;
-    min-height: 150px;
-    height: 50vw;
-    max-height: 250px;
-  }
   .img-maestra-01 {
     background: url("../images/maestras/maestra-01-movil.jpg") center / cover;
   }
@@ -899,34 +887,47 @@ ul {
   .img-maestra-03 {
     background: url("../images/maestras/maestra-03-movil.jpg") center / cover;
   }
-  .redes-maestra {
-    width: 40%;
-    height: 40px;
-    @include flexbox(row, center, center);
-    margin: 30px 0px 0px 30px;
-  }
-  .link-maestra {
-    width: 25%;
-    height: 100%;
-    @include flexbox(row, center, flex-start);
-    color: $color-naranja;
-  }
-  .nombre-maestra {
-    font-weight: 800;
-    color: $color-rojo;
-    text-transform: capitalize;
-    font-size: 1.2rem;
-    margin: 5px 0px 5px 30px;
-  }
-  .rol-maestra {
-    margin-left: 30px;
-    text-transform: capitalize;
-    margin-bottom: 50px;
-  }
   .btn-principal {
     background: $color-rojo;
     min-width: 250px;
   }
+}
+//ESTILOS SEPARADOS PARA PODER REUTILIZARLOS EN LA PAG-SEC MAESTRAS
+.cartas-maestras {
+  width: 100%;
+  background: white;
+  border-bottom: 5px solid #4ec4f7;
+  margin: 50px 0px;
+}
+.img-maestra {
+  width: 100%;
+  min-height: 150px;
+  height: 50vw;
+  max-height: 250px;
+}
+.redes-maestra {
+  width: 40%;
+  height: 40px;
+  @include flexbox(row, center, center);
+  margin: 30px 0px 0px 30px;
+}
+.link-maestra {
+  width: 25%;
+  height: 100%;
+  @include flexbox(row, center, flex-start);
+  color: $color-naranja;
+}
+.nombre-maestra {
+  font-weight: 800;
+  color: $color-rojo;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin: 5px 0px 5px 30px;
+}
+.rol-maestra {
+  margin-left: 30px;
+  text-transform: capitalize;
+  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   .maestras {
@@ -1616,6 +1617,65 @@ ul {
       margin-top: 0px;
     }
     .img-clases {
+      height: 18vw;
+    }
+  }
+}
+
+//INICIO PAG-SEC MAESTRAS
+.contenido-principal-maestras {
+  background: white;
+  .img-maestra-01 {
+    background: url("../images/paginas-secundarias/maestras/img-maestra-01.jpg")
+      center / cover;
+  }
+  .img-maestra-02 {
+    background: url("../images/paginas-secundarias/maestras/img-maestra-02.jpg")
+      center / cover;
+  }
+  .img-maestra-03 {
+    background: url("../images/paginas-secundarias/maestras/img-maestra-03.jpg")
+      center / cover;
+  }
+  .img-maestra-04 {
+    background: url("../images/paginas-secundarias/maestras/img-maestra-04.jpg")
+      center / cover;
+  }
+  .img-maestra-05 {
+    background: url("../images/paginas-secundarias/maestras/img-maestra-05.jpg")
+      center / cover;
+  }
+  .img-maestra-06 {
+    background: url("../images/paginas-secundarias/maestras/img-maestra-06.jpg")
+      center / cover;
+  }
+  .cartas-maestras {
+    border-bottom: none;
+    margin-bottom: 70px;
+  }
+  .redes-maestra {
+    margin-left: 0px;
+  }
+  .nombre-maestra {
+    margin: 0px;
+    font-size: 1.31rem;
+  }
+  .rol-maestra {
+    margin: 0px 0px 20px;
+    font-weight: 600;
+  }
+}
+@media (min-width: 768px) {
+  .contenido-principal-maestras {
+    .contenedor-gral {
+      @include flexbox(row, flex-start, space-between);
+      flex-wrap: wrap;
+    }
+    .cartas-maestras {
+      width: 31%;
+      margin-top: 0px;
+    }
+    .img-maestra {
       height: 18vw;
     }
   }

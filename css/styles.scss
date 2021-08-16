@@ -22,7 +22,7 @@ $color-bg-flotante: #1f1f1f;
   box-sizing: border-box;
   transition: all 0.3s;
 }
-body{
+body {
   min-width: 320px;
 }
 
@@ -1225,5 +1225,87 @@ ul {
 @media (min-width: 1024px) {
   .flotante-movil {
     display: none;
+  }
+}
+
+//INICIO PAGINAS SECUNDARIAS
+//INICIO SECCION ADMISIONES
+.admisiones {
+  background: url("../images/paginas-secundarias/admisiones/bg-3.jpg") center /
+    cover;
+  width: 100%;
+  min-height: 100vh;
+
+  .titulo-admisiones {
+    @include flexbox(column, center, flex-start);
+    border-bottom: 3px solid $color-azul;
+  }
+  .sub-admisiones,
+  .main-admisiones {
+    font-size: 2.5rem;
+    color: white;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .sub-admisiones {
+    text-transform: capitalize;
+    font-weight: 300;
+    margin-top: 20px;
+    line-height: 1.7;
+  }
+  .main-admisiones {
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 80px;
+  }
+  .contenido-admisiones {
+    margin-top: 40px;
+  }
+  .texto-main-admisiones {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+  }
+  .input-mail {
+    width: 100%;
+    padding: 20px 15px;
+    font-size: 1rem;
+    border: none;
+  }
+  .input-mail::placeholder {
+    text-transform: capitalize;
+  }
+  .btn-principal {
+    background: $color-azul;
+    width: 100%;
+    @include flexbox(row, center, center);
+    margin-top: 10px;
+    border-radius: 0px;
+    min-height: 58px;
+  }
+}
+@media (min-width: 768px) {
+  .admisiones {
+    .contenedor-gral {
+      max-width: 650px;
+      padding: 100px 30px 50px;
+    }
+    .main-admisiones {
+      font-size: 5.2rem;
+      max-width: 80%;
+    }
+    .input-admisiones {
+      @include flexbox(row, flex-start, flex-start);
+      width: 90%;
+      margin: 0 auto;
+    }
+    .input-mail {
+      width: 70%;
+    }
+    .btn-principal {
+      width: 30%;
+      margin: 0;
+    }
   }
 }

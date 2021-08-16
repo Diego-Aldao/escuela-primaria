@@ -1839,4 +1839,138 @@ ul {
     display: none;
   }
 }
+
+.admisiones {
+  background: url("../images/paginas-secundarias/admisiones/bg-3.jpg") center/cover;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.admisiones .titulo-admisiones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-bottom: 3px solid #64bee6;
+}
+
+.admisiones .sub-admisiones,
+.admisiones .main-admisiones {
+  font-size: 2.5rem;
+  color: white;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.admisiones .sub-admisiones {
+  text-transform: capitalize;
+  font-weight: 300;
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+.admisiones .main-admisiones {
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 80px;
+}
+
+.admisiones .contenido-admisiones {
+  margin-top: 40px;
+}
+
+.admisiones .texto-main-admisiones {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.admisiones .input-mail {
+  width: 100%;
+  padding: 20px 15px;
+  font-size: 1rem;
+  border: none;
+}
+
+.admisiones .input-mail::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+
+.admisiones .input-mail:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.admisiones .input-mail::-ms-input-placeholder {
+  text-transform: capitalize;
+}
+
+.admisiones .input-mail::placeholder {
+  text-transform: capitalize;
+}
+
+.admisiones .btn-principal {
+  background: #64bee6;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+  border-radius: 0px;
+  min-height: 58px;
+}
+
+@media (min-width: 768px) {
+  .admisiones .contenedor-gral {
+    max-width: 650px;
+    padding: 100px 30px 50px;
+  }
+  .admisiones .main-admisiones {
+    font-size: 5.2rem;
+    max-width: 80%;
+  }
+  .admisiones .input-admisiones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .admisiones .input-mail {
+    width: 70%;
+  }
+  .admisiones .btn-principal {
+    width: 30%;
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

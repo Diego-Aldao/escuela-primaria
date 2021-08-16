@@ -1137,21 +1137,6 @@ ul {
   font-size: 1.8rem;
 }
 
-.clases .cartas-clases {
-  width: 100%;
-  text-align: center;
-  margin: 60px 0px;
-  border: 1px solid #dbdbdb;
-  border-radius: 5px;
-}
-
-.clases .img-clases {
-  width: 100%;
-  min-height: 150px;
-  height: 50vw;
-  max-height: 250px;
-}
-
 .clases .img-clase-01 {
   background: url("../images/clases/clase-01-movil.jpg") center/cover;
 }
@@ -1162,48 +1147,6 @@ ul {
 
 .clases .img-clase-03 {
   background: url("../images/clases/clase-03-movil.jpg") center/cover;
-}
-
-.clases .titulos-clases {
-  font-weight: 800;
-  color: #dc3c3a;
-  text-transform: capitalize;
-  font-size: 1.2rem;
-  margin: 25px 0px 15px;
-  padding: 0px 20px;
-}
-
-.clases .maestra,
-.clases .grado {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0px 20px;
-}
-
-.clases .textos-comunes {
-  text-transform: capitalize;
-}
-
-.clases .negrita {
-  font-weight: 800;
-  text-transform: capitalize;
-}
-
-.clases .btn-clases {
-  color: #64bee6;
-  margin-top: 15px;
-  font-weight: 500;
 }
 
 .clases .btn-seccion-clases {
@@ -1222,6 +1165,63 @@ ul {
       -ms-flex-pack: center;
           justify-content: center;
   min-width: 220px;
+}
+
+.cartas-clases {
+  width: 100%;
+  text-align: center;
+  margin: 60px 0px;
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+.img-clases {
+  width: 100%;
+  min-height: 150px;
+  height: 50vw;
+  max-height: 250px;
+}
+
+.titulos-clases {
+  font-weight: 800;
+  color: #dc3c3a;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  margin: 25px 0px 15px;
+  padding: 0px 20px;
+}
+
+.maestra,
+.grado {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0px 20px;
+}
+
+.textos-comunes {
+  text-transform: capitalize;
+}
+
+.negrita {
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.btn-clases {
+  color: #64bee6;
+  margin-top: 15px;
+  font-weight: 500;
 }
 
 @media (min-width: 768px) {
@@ -2347,6 +2347,61 @@ ul {
     width: 31%;
   }
   .contenido-principal-eventos .img-pag-sec-eventos {
+    height: 18vw;
+  }
+}
+
+.contenido-principal-clases {
+  background: white;
+}
+
+.contenido-principal-clases .img-clase-01 {
+  background: url("../images/paginas-secundarias/clases/img-clase-01.jpg") center/cover;
+}
+
+.contenido-principal-clases .img-clase-02 {
+  background: url("../images/paginas-secundarias/clases/img-clase-02.jpg") center/cover;
+}
+
+.contenido-principal-clases .img-clase-03 {
+  background: url("../images/paginas-secundarias/clases/img-clase-03.jpg") center/cover;
+}
+
+.contenido-principal-clases .img-clase-04 {
+  background: url("../images/paginas-secundarias/clases/img-clase-04.jpg") center/cover;
+}
+
+.contenido-principal-clases .img-clase-05 {
+  background: url("../images/paginas-secundarias/clases/img-clase-05.jpg") center/cover;
+}
+
+.contenido-principal-clases .img-clase-06 {
+  background: url("../images/paginas-secundarias/clases/img-clase-06.jpg") center/cover;
+}
+
+@media (min-width: 768px) {
+  .contenido-principal-clases .contenedor-gral {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contenido-principal-clases .cartas-clases {
+    width: 31%;
+    margin-top: 0px;
+  }
+  .contenido-principal-clases .img-clases {
     height: 18vw;
   }
 }

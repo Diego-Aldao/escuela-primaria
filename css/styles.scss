@@ -674,59 +674,60 @@ ul {
     background: $color-textos;
     margin-left: 25px;
   }
-  .cartas-eventos {
-    width: 100%;
-    min-height: 120px;
-    margin-bottom: 35px;
-    @include flexbox(row, flex-start, flex-start);
-    font-family: $fuente-textos;
-    max-width: 430px;
-    margin: 0 auto;
-  }
-  .fecha-eventos {
-    width: 45px;
-    height: 120px;
-    text-align: center;
-    @include flexbox(column, center, flex-start);
-    margin-right: 20px;
-  }
-  .num-eventos {
-    font-size: 2.1rem;
-    font-weight: 800;
-    width: 100%;
-    color: $color-azul;
-  }
-  .mes-eventos {
-    text-transform: uppercase;
-    font-weight: 800;
-  }
-  .linea-eventos {
-    width: 45px;
-    height: 3px;
-    background: $color-azul;
-    margin-top: 10px;
-  }
-  .textos-eventos {
-    font-weight: 800;
-    color: $color-txt-black;
-    text-transform: capitalize;
-    line-height: 1.3;
-    margin-bottom: 20px;
-  }
-  .datos-eventos {
-    color: $color-azul;
-    text-transform: capitalize;
-    font-weight: 500;
-  }
-  .horario {
-    margin-bottom: 5px;
-  }
   .btn-eventos {
     color: $color-rojo;
     margin-left: 0;
     font-weight: 700;
     margin: 0 auto;
   }
+}
+//ESTILOS DE CARTAS-EVENTOS SEPARADOS PARA PODER REUTILIZARLOS EN LA PAG-SEC EVENTOS
+.cartas-eventos {
+  width: 100%;
+  min-height: 120px;
+  margin-bottom: 35px;
+  @include flexbox(row, flex-start, flex-start);
+  font-family: $fuente-textos;
+  max-width: 430px;
+  margin: 0 auto;
+}
+.fecha-eventos {
+  width: 45px;
+  height: 120px;
+  text-align: center;
+  @include flexbox(column, center, flex-start);
+  margin-right: 20px;
+}
+.num-eventos {
+  font-size: 2.1rem;
+  font-weight: 800;
+  width: 100%;
+  color: $color-azul;
+}
+.mes-eventos {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.linea-eventos {
+  width: 45px;
+  height: 3px;
+  background: $color-azul;
+  margin-top: 10px;
+}
+.textos-eventos {
+  font-weight: 800;
+  color: $color-txt-black;
+  text-transform: capitalize;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+.datos-eventos {
+  color: $color-azul;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.horario {
+  margin-bottom: 5px;
 }
 .contenedor-especial {
   max-width: 1320px;
@@ -1517,6 +1518,59 @@ ul {
     .contenido-side-noticias {
       width: 35%;
       margin-top: 0px;
+    }
+  }
+}
+
+//INICIO PAG-SEC EVENTOS
+.contenido-principal-eventos {
+  background: white;
+  .cartas-pag-sec-eventos {
+    margin-bottom: 40px;
+  }
+  .img-pag-sec-eventos {
+    width: 100%;
+    height: 50vw;
+    max-height: 275px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  .img-ev-01 {
+    background: url("../images/paginas-secundarias/eventos/img-evento-01.jpg")
+      center / cover;
+  }
+  .img-ev-02 {
+    background: url("../images/paginas-secundarias/eventos/img-evento-02.jpg")
+      center / cover;
+  }
+  .img-ev-03 {
+    background: url("../images/paginas-secundarias/eventos/img-evento-03.jpg")
+      center / cover;
+  }
+  .img-ev-04 {
+    background: url("../images/paginas-secundarias/eventos/img-evento-04.jpg")
+      center / cover;
+  }
+  .img-ev-05 {
+    background: url("../images/paginas-secundarias/eventos/img-evento-05.jpg")
+      center / cover;
+  }
+  .img-ev-06 {
+    background: url("../images/paginas-secundarias/eventos/img-evento-06.jpg")
+      center / cover;
+  }
+}
+@media (min-width: 768px) {
+  .contenido-principal-eventos {
+    .contenedor-gral {
+      @include flexbox(row, flex-start, space-between);
+      flex-wrap: wrap;
+    }
+    .cartas-pag-sec-eventos {
+      width: 31%;
+    }
+    .img-pag-sec-eventos {
+      height: 18vw;
     }
   }
 }

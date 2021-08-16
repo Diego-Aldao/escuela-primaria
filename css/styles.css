@@ -964,7 +964,14 @@ ul {
   margin-left: 25px;
 }
 
-.eventos .cartas-eventos {
+.eventos .btn-eventos {
+  color: #dc3c3a;
+  margin-left: 0;
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.cartas-eventos {
   width: 100%;
   min-height: 120px;
   margin-bottom: 35px;
@@ -986,7 +993,7 @@ ul {
   margin: 0 auto;
 }
 
-.eventos .fecha-eventos {
+.fecha-eventos {
   width: 45px;
   height: 120px;
   text-align: center;
@@ -1006,26 +1013,26 @@ ul {
   margin-right: 20px;
 }
 
-.eventos .num-eventos {
+.num-eventos {
   font-size: 2.1rem;
   font-weight: 800;
   width: 100%;
   color: #64bee6;
 }
 
-.eventos .mes-eventos {
+.mes-eventos {
   text-transform: uppercase;
   font-weight: 800;
 }
 
-.eventos .linea-eventos {
+.linea-eventos {
   width: 45px;
   height: 3px;
   background: #64bee6;
   margin-top: 10px;
 }
 
-.eventos .textos-eventos {
+.textos-eventos {
   font-weight: 800;
   color: #242424;
   text-transform: capitalize;
@@ -1033,21 +1040,14 @@ ul {
   margin-bottom: 20px;
 }
 
-.eventos .datos-eventos {
+.datos-eventos {
   color: #64bee6;
   text-transform: capitalize;
   font-weight: 500;
 }
 
-.eventos .horario {
+.horario {
   margin-bottom: 5px;
-}
-
-.eventos .btn-eventos {
-  color: #dc3c3a;
-  margin-left: 0;
-  font-weight: 700;
-  margin: 0 auto;
 }
 
 .contenedor-especial {
@@ -2282,6 +2282,72 @@ ul {
   .contenido-principal-noticias .contenido-side-noticias {
     width: 35%;
     margin-top: 0px;
+  }
+}
+
+.contenido-principal-eventos {
+  background: white;
+}
+
+.contenido-principal-eventos .cartas-pag-sec-eventos {
+  margin-bottom: 40px;
+}
+
+.contenido-principal-eventos .img-pag-sec-eventos {
+  width: 100%;
+  height: 50vw;
+  max-height: 275px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.contenido-principal-eventos .img-ev-01 {
+  background: url("../images/paginas-secundarias/eventos/img-evento-01.jpg") center/cover;
+}
+
+.contenido-principal-eventos .img-ev-02 {
+  background: url("../images/paginas-secundarias/eventos/img-evento-02.jpg") center/cover;
+}
+
+.contenido-principal-eventos .img-ev-03 {
+  background: url("../images/paginas-secundarias/eventos/img-evento-03.jpg") center/cover;
+}
+
+.contenido-principal-eventos .img-ev-04 {
+  background: url("../images/paginas-secundarias/eventos/img-evento-04.jpg") center/cover;
+}
+
+.contenido-principal-eventos .img-ev-05 {
+  background: url("../images/paginas-secundarias/eventos/img-evento-05.jpg") center/cover;
+}
+
+.contenido-principal-eventos .img-ev-06 {
+  background: url("../images/paginas-secundarias/eventos/img-evento-06.jpg") center/cover;
+}
+
+@media (min-width: 768px) {
+  .contenido-principal-eventos .contenedor-gral {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .contenido-principal-eventos .cartas-pag-sec-eventos {
+    width: 31%;
+  }
+  .contenido-principal-eventos .img-pag-sec-eventos {
+    height: 18vw;
   }
 }
 /*# sourceMappingURL=styles.css.map */

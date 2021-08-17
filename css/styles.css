@@ -2572,6 +2572,10 @@ a {
   color: #dc3c3a;
 }
 
+.contenido-principal-contacto .mail-negrita {
+  text-transform: lowercase;
+}
+
 @media (min-width: 768px) {
   .contenedor-cartas-contacto .contenedor-gral {
     display: -webkit-box;
@@ -2632,6 +2636,7 @@ a {
   width: 100%;
   border-radius: 0px;
   text-align: center;
+  border: none;
 }
 
 .google-map-contacto {

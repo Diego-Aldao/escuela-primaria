@@ -2479,4 +2479,61 @@ ul {
     height: 18vw;
   }
 }
+
+.contenido-principal-contacto {
+  background: white;
+}
+
+.contenido-principal-contacto .contenedor-cartas-contacto {
+  background: #272727;
+}
+
+.contenido-principal-contacto .carta-contacto {
+  padding-bottom: 50px;
+}
+
+.contenido-principal-contacto .fa-contacto {
+  font-size: 2.2rem;
+  color: white;
+}
+
+.contenido-principal-contacto .titulo-carta-contacto {
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-weight: 800;
+  margin: 25px 0px;
+}
+
+.contenido-principal-contacto .texto-carta-contacto {
+  color: white;
+  text-transform: none;
+  margin-bottom: 20px;
+}
+
+.contenido-principal-contacto .negrita-contacto {
+  color: #dc3c3a;
+}
+
+@media (min-width: 768px) {
+  .contenedor-cartas-contacto .contenedor-gral {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contenedor-cartas-contacto .carta-contacto {
+    padding: 0px;
+    width: 30%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

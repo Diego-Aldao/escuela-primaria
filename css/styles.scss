@@ -1680,3 +1680,45 @@ ul {
     }
   }
 }
+
+//INICIO PAG-SEC CONTACTO
+
+.contenido-principal-contacto {
+  background: white;
+  .contenedor-cartas-contacto {
+    background: $color-bg-black;
+  }
+  .carta-contacto {
+    padding-bottom: 50px;
+  }
+  .fa-contacto {
+    font-size: 2.2rem;
+    color: white;
+  }
+  .titulo-carta-contacto {
+    color: white;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin: 25px 0px;
+  }
+  .texto-carta-contacto {
+    color: white;
+    text-transform: none;
+    margin-bottom: 20px;
+  }
+  .negrita-contacto {
+    color: $color-rojo;
+  }
+}
+@media (min-width: 768px) {
+  .contenedor-cartas-contacto {
+    .contenedor-gral {
+      @include flexbox(row, flex-start, space-between);
+    }
+    .carta-contacto {
+      padding: 0px;
+      width: 30%;
+    }
+  }
+}

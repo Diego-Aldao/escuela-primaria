@@ -2372,6 +2372,10 @@ a {
   background: white;
 }
 
+.contenido-principal-clases .cartas-clases {
+  display: block;
+}
+
 .contenido-principal-clases .img-clase-01 {
   background: url("../images/paginas-secundarias/clases/img-clase-01.jpg") center/cover;
 }

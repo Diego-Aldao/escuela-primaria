@@ -1595,6 +1595,9 @@ a {
 
 //INICIO PAG-SEC CLASES
 .contenido-principal-clases {
+  .cartas-clases {
+    display: block;
+  }
   background: white;
   .img-clase-01 {
     background: url("../images/paginas-secundarias/clases/img-clase-01.jpg")

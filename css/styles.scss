@@ -1685,6 +1685,15 @@ ul {
 
 //INICIO PAG-SEC CONTACTO
 
+.header-pag-sec-contacto {
+  min-height: 500px;
+  text-align: center;
+  @include flexbox(column, center, center);
+  .titulo-header-sec {
+    font-size: clamp(2.8rem, 7vw, 4.7rem);
+  }
+}
+
 .contenido-principal-contacto {
   background: white;
   .contenedor-cartas-contacto {

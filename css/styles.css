@@ -2458,6 +2458,7 @@ a {
 .contenido-principal-maestras .cartas-maestras {
   border-bottom: none;
   margin-bottom: 70px;
+  display: block;
 }
 
 .contenido-principal-maestras .redes-maestra {

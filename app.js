@@ -51,3 +51,19 @@ btnAbrirDesplegable.addEventListener("click", abrirDesplegable);
 btnCerrarDesplegable.addEventListener("click", cerrarDesplegable);
 
 flotanteDark.addEventListener("click", cerrarDesplegable);
+
+//SWIPER HEADER PRINCIPAL
+const headerPrincipal = document.querySelector(".header-principal");
+
+setInterval(() => {
+  if (
+    headerPrincipal.style.background ==
+    'url("../images/slider-uno.jpg") center center / cover'
+  ) {
+    headerPrincipal.style.background =
+      'url("../images/slider-dos.jpg") center center / cover';
+  } else {
+    headerPrincipal.style.background =
+      'url("../images/slider-uno.jpg") center / cover';
+  }
+}, 4000);

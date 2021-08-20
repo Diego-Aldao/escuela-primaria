@@ -47,12 +47,10 @@ let abrirDesplegable = () => {
 };
 
 btnAbrirDesplegable.addEventListener("click", abrirDesplegable);
-
 btnCerrarDesplegable.addEventListener("click", cerrarDesplegable);
-
 flotanteDark.addEventListener("click", cerrarDesplegable);
 
-//SWIPER HEADER PRINCIPAL
+//BACKGROUND HEADER PRINCIPAL
 const headerPrincipal = document.querySelector(".header-principal");
 
 setInterval(() => {
@@ -66,4 +64,4 @@ setInterval(() => {
     headerPrincipal.style.background =
       'url("../images/slider-uno.jpg") center / cover';
   }
-}, 4000);
+}, 5000);

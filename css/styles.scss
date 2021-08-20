@@ -20,7 +20,6 @@ $color-bg-flotante: #1f1f1f;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  transition: all 0.3s;
 }
 body {
   min-width: 320px;
@@ -467,6 +466,7 @@ a {
 
 //INICIO SECCION NOSOTROS
 .about {
+  background: white;
   padding-top: 0px;
   .texto-grande {
     padding: 20px 15px 0px;
@@ -499,20 +499,20 @@ a {
 //QUERYS SECCION NOSOTROS
 @media (min-width: 768px) {
   .about {
-    max-width: 1320px;
-    margin: 0 auto;
-    @include flexbox(row, flex-start, flex-start);
-    .headers-principales {
-      min-width: 220px;
-      max-width: 30%;
-      margin: 0 auto 0 0;
-    }
-    .contenido-about {
-      width: 70%;
-    }
-    .texto-grande {
-      padding: 0px 20px;
-      max-width: 100%;
+    .contenedor-gral {
+      @include flexbox(row, flex-start, flex-start);
+      .headers-principales {
+        min-width: 220px;
+        max-width: 30%;
+        margin: 0 auto 0 0;
+      }
+      .contenido-about {
+        width: 70%;
+      }
+      .texto-grande {
+        padding: 0px 20px;
+        max-width: 100%;
+      }
     }
   }
 }
@@ -793,6 +793,7 @@ a {
 }
 //INICIO SECCION CLASES
 .clases {
+  background: white;
   .headers-principales {
     flex-direction: column;
     align-items: center;
@@ -1197,10 +1198,10 @@ a {
   height: 100%;
   background: $color-bg-flotante;
   color: $color-textos;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
-  z-index: -1;
+  z-index: 1;
   padding: 50px 45px;
   .btn-cerrar-flotante {
     width: 20px;
@@ -1813,5 +1814,27 @@ a {
     height: 100%;
     @include flexbox(row, center, center);
     font-size: 1.5rem;
+  }
+}
+.contenedor-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.flotante-dark {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: calc(100% - 250px);
+  background: rgba(0, 0, 0, 0.479);
+  z-index: 99;
+  display: none;
+  opacity: 0;
+}
+@media (min-width: 550px) {
+  .flotante-dark {
+    width: calc(100% - 350px);
   }
 }

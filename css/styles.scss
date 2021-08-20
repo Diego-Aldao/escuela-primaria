@@ -1229,6 +1229,26 @@ a {
   color: white;
   @include flexbox(row, center, center);
   z-index: 2;
+  i {
+    position: relative;
+    animation: animacion 0.5s infinite;
+  }
+}
+@keyframes animacion {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: -3px;
+  }
+  100% {
+    top: 2px;
+  }
+}
+@media (min-width: 1024px) {
+  .btn-flotante-up {
+    left: 96%;
+  }
 }
 
 .flotante-movil {

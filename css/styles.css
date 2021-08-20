@@ -1204,6 +1204,7 @@ a {
   margin: 60px 0px;
   border: 1px solid #dbdbdb;
   border-radius: 5px;
+  display: block;
 }
 
 .img-clases {
@@ -1328,6 +1329,7 @@ a {
   background: white;
   border-bottom: 5px solid #4ec4f7;
   margin: 50px 0px;
+  display: block;
 }
 
 .img-maestra {
@@ -2378,10 +2380,6 @@ a {
   background: white;
 }
 
-.contenido-principal-clases .cartas-clases {
-  display: block;
-}
-
 .contenido-principal-clases .img-clase-01 {
   background: url("../images/paginas-secundarias/clases/img-clase-01.jpg") center/cover;
 }
@@ -2464,7 +2462,6 @@ a {
 .contenido-principal-maestras .cartas-maestras {
   border-bottom: none;
   margin-bottom: 70px;
-  display: block;
 }
 
 .contenido-principal-maestras .redes-maestra {

@@ -1983,7 +1983,43 @@ a {
   min-height: 100vh;
 }
 
+.admisiones .contenedor-gral {
+  padding-top: 50px;
+  min-height: 100vh;
+  max-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.admisiones .link-volver {
+  color: white;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+  width: 160px;
+  margin-left: auto;
+}
+
+.admisiones .link-volver i {
+  margin-right: 10px;
+}
+
+.admisiones .link-volver:hover {
+  color: #242424;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
 .admisiones .titulo-admisiones {
+  margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2038,6 +2074,10 @@ a {
   margin-top: 10px;
   border-radius: 0px;
   min-height: 58px;
+}
+
+.admisiones .input-mail {
+  max-height: 58px;
 }
 
 .input-mail {

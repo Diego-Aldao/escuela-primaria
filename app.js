@@ -65,3 +65,38 @@ setInterval(() => {
       'url("../images/slider-uno.jpg") center / cover';
   }
 }, 5000);
+
+//ANIMACION BARRA-BUSCAR
+const barraBuscar = document.querySelector(".barra-buscar");
+const btnBuscar = document.querySelector(".buscador");
+const btnBuscar2 = document.querySelector(".buscador2");
+const btnCerrarBuscador = document.querySelector(".btn-cerrar-buscador");
+
+const abrirBarraBuscar = () => {
+  if (barraBuscar.style.opacity == "1") {
+    gsap.to(barraBuscar, {
+      right: "-5px",
+      opacity: "0",
+      duration: 0.2,
+    });
+    gsap.to(barraBuscar, {
+      display: "none",
+      delay: 0.3,
+    });
+  } else {
+    gsap.to(barraBuscar, {
+      display: "flex",
+      duration: 0.1,
+    });
+    gsap.to(barraBuscar, {
+      right: "0px",
+      opacity: "1",
+      delay: 0.1,
+      duration: 0.2,
+    });
+  }
+};
+
+btnBuscar.addEventListener("click", abrirBarraBuscar);
+btnBuscar2.addEventListener("click", abrirBarraBuscar);
+btnCerrarBuscador.addEventListener("click", abrirBarraBuscar);

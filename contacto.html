@@ -11,6 +11,10 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@200;300;400;500;600;700&family=Caveat:wght@700&display=swap"
       rel="stylesheet"
     />
+    <!--ESTILOS MAPA-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+  integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+  crossorigin=""/>
     <!--MAIN ESTILOS-->
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Contacto | ArcoirisKids</title>
@@ -134,26 +138,26 @@
                 type="text"
                 name="nombre"
                 class="input-mail"
-                id=""
+                
                 placeholder="nombre completo*"
               />
               <input
                 type="mail"
                 name="correo"
                 class="input-mail"
-                id=""
+                
                 placeholder="email*"
               />
               <input
                 type="text"
                 name="asunto"
                 class="input-mail"
-                id=""
+                
                 placeholder="asunto*"
               />
               <textarea
                 name="mensaje"
-                id=""
+                
                 rows="5"
                 placeholder="mensaje*"
                 class="input-mail"
@@ -166,7 +170,7 @@
             </form>
           </div>
         </div>
-        <div class="google-map-contacto"></div>
+        <div class="google-map-contacto" id="map-leaflet"></div>
         <div class="redes-contacto">
           <div class="contenedor-gral">
             <ul class="links-contacto">
@@ -336,6 +340,9 @@
       src="https://kit.fontawesome.com/104a2e09d4.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+  integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+  crossorigin=""></script>
     <script src="app.js"></script>
   </body>
 </html>

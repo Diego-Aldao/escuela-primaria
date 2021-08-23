@@ -2834,9 +2834,8 @@ a {
 }
 
 .google-map-contacto {
-  width: 100%;
   height: 500px;
-  background: red;
+  max-height: none;
 }
 
 .redes-contacto .contenedor-gral {

@@ -90,11 +90,19 @@ a {
   background: $color-rojo;
 }
 
+.contenedor-main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
 .contenedor-gral {
   padding: 100px 30px 50px;
   max-width: 470px;
   margin: 0 auto;
 }
+//QUERYS CONTENEDOR-GRAL
 @media (min-width: 768px) {
   .contenedor-gral {
     max-width: 1320px;
@@ -155,23 +163,23 @@ a {
 
 //INICIO NAVEGACION PRINCIPAL
 .info-nav-desktop {
-  background: $color-azul;
   width: 100%;
   height: 50px;
   padding: 0px 60px;
+  background: $color-azul;
   .contenido-info {
-    @include flexbox(row, flex-start, center);
     height: 100%;
     width: 100%;
     max-width: 1320px;
+    @include flexbox(row, flex-start, center);
     margin: 0 auto;
   }
   .correo-nav-desktop,
   .telefono-nav-desktop {
-    color: white;
+    height: 100%;
     @include flexbox(row, center, flex-start);
     margin-right: 25px;
-    height: 100%;
+    color: white;
     i {
       margin-right: 10px;
       font-size: 0.8rem;
@@ -189,8 +197,8 @@ a {
     width: 200px;
     height: 100%;
     @include flexbox(row, center, center);
-    color: white;
     margin-left: auto;
+    color: white;
     a {
       width: 20%;
       height: 100%;
@@ -215,14 +223,14 @@ a {
 }
 
 .navegacion-principal {
+  position: sticky;
+  top: 0;
+  z-index: 9;
   width: 100%;
   height: 75px;
   padding: 0px 30px;
   border-bottom: 1px solid $color-azul;
-  position: sticky;
   background: white;
-  top: 0;
-  z-index: 9;
 }
 
 .nav-movil {
@@ -519,6 +527,8 @@ a {
     color: $color-naranja;
   }
 }
+
+//QUERYS CONTENIDO PRINCIPAL
 @media (min-width: 768px) {
   .contenido-principal {
     .contenedor-gral {
@@ -955,7 +965,7 @@ a {
   }
 }
 
-//INICIO SECCION MAESTROS
+//INICIO SECCION MAESTRAS
 .maestras {
   background: #8ed8f8;
   .contenedor-gral {
@@ -1020,6 +1030,8 @@ a {
   text-transform: capitalize;
   margin-bottom: 50px;
 }
+
+//QUERYS SECCION MAESTRAS
 @media (min-width: 768px) {
   .maestras {
     .contenedor-gral {
@@ -1042,7 +1054,6 @@ a {
 }
 
 //INICIO SECCION TESTIMONIOS
-
 .testimonios {
   background: url("../images/testimonial-bg.jpg") center / cover;
   color: white;
@@ -1106,7 +1117,6 @@ a {
 }
 
 //INICIO QUERYS TESTIMONIOS
-
 @media (min-width: 768px) {
   .testimonios {
     .contenedor-gral {
@@ -1237,7 +1247,6 @@ a {
 }
 
 //INICIO QUERYS FOOTER
-
 @media (min-width: 850px) {
   .footer-principal {
     .logo {
@@ -1288,12 +1297,6 @@ a {
     top: 2px;
   }
 }
-@media (min-width: 1024px) {
-  .btn-flotante-up {
-    left: 96%;
-  }
-}
-
 .flotante-movil {
   width: 250px;
   height: 100%;
@@ -1343,18 +1346,37 @@ a {
     color: white;
   }
 }
+.flotante-dark {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: calc(100% - 250px);
+  background: rgba(0, 0, 0, 0.479);
+  z-index: 99;
+  display: none;
+  opacity: 0;
+}
+
+//QUERYS FLOTANTES
 @media (min-width: 550px) {
   .flotante-movil {
     width: 350px;
+  }
+  .flotante-dark {
+    width: calc(100% - 350px);
   }
 }
 @media (min-width: 1024px) {
   .flotante-movil {
     display: none;
   }
+  .btn-flotante-up {
+    left: 96%;
+  }
 }
 
-//INICIO PAGINAS SECUNDARIAS
+//---------INICIO PAGINAS SECUNDARIAS--------------//
 
 //INICIO PAG-SEC ADMISIONES
 .admisiones {
@@ -1440,6 +1462,7 @@ a {
   text-transform: capitalize;
 }
 
+//QUERYS PAG-SEC ADMISIONES
 @media (min-width: 768px) {
   .admisiones {
     .contenedor-gral {
@@ -1465,7 +1488,7 @@ a {
   }
 }
 
-//INICIO PAG-SEC NOTICIAS
+//INICIO HEADER PAGINAS SECUNDARIAS
 .header-pag-secundarias {
   background: url("../images/paginas-secundarias/page-title-2.jpg") center /
     cover;
@@ -1479,6 +1502,8 @@ a {
     line-height: 1.5;
   }
 }
+
+//QUERYS HEADER PAGINAS SECUNDARIAS
 @media (min-width: 768px) {
   .header-pag-secundarias {
     .contenedor-gral {
@@ -1491,7 +1516,7 @@ a {
   }
 }
 
-//PAG-SEC NOTICIAS MAIN
+//INICIO PAG-SEC NOTICIAS
 .contenido-principal-noticias {
   background: $color-bg-white;
   .cartas-main-noticias {
@@ -1568,25 +1593,6 @@ a {
     color: white;
   }
 }
-//QUERYS PAG-SEC NOTICIAS MAIN
-@media (min-width: 768px) {
-  .contenido-principal-noticias {
-    .contenedor-gral {
-      max-width: 1320px;
-      @include flexbox(row, flex-start, flex-start);
-    }
-    .contenido-main-noticias {
-      width: 60%;
-      margin-right: auto;
-    }
-    .img-cartas-main-noticias {
-      height: 32vw;
-      max-height: 440px;
-    }
-  }
-}
-
-//PAG-SEC NOTICIAS SIDE
 .contenido-side-noticias {
   margin: 100px 0px 50px;
   .carta-side:nth-child(2) {
@@ -1665,8 +1671,22 @@ a {
     margin: 0px 10px 10px 0px;
   }
 }
+
+//QUERYS PAG-SEC NOTICIAS
 @media (min-width: 768px) {
   .contenido-principal-noticias {
+    .contenedor-gral {
+      max-width: 1320px;
+      @include flexbox(row, flex-start, flex-start);
+    }
+    .contenido-main-noticias {
+      width: 60%;
+      margin-right: auto;
+    }
+    .img-cartas-main-noticias {
+      height: 32vw;
+      max-height: 440px;
+    }
     .contenido-side-noticias {
       width: 35%;
       margin-top: 0px;
@@ -1712,6 +1732,8 @@ a {
       center / cover;
   }
 }
+
+//QUERYS PAG-SEC EVENTOS
 @media (min-width: 768px) {
   .contenido-principal-eventos {
     .contenedor-gral {
@@ -1755,6 +1777,8 @@ a {
       center / cover;
   }
 }
+
+//QUERYS PAG-SEC CLASES
 @media (min-width: 768px) {
   .contenido-principal-clases {
     .contenedor-gral {
@@ -1814,6 +1838,8 @@ a {
     font-weight: 600;
   }
 }
+
+//QUERYS PAG-SEC MAESTRAS
 @media (min-width: 768px) {
   .contenido-principal-maestras {
     .contenedor-gral {
@@ -1831,7 +1857,6 @@ a {
 }
 
 //INICIO PAG-SEC CONTACTO
-
 .header-pag-sec-contacto {
   min-height: 500px;
   text-align: center;
@@ -1840,7 +1865,6 @@ a {
     font-size: clamp(2.8rem, 7vw, 4.7rem);
   }
 }
-
 .contenido-principal-contacto {
   background: white;
   .contenedor-cartas-contacto {
@@ -1873,21 +1897,6 @@ a {
     text-transform: lowercase;
   }
 }
-@media (min-width: 768px) {
-  .contenedor-cartas-contacto {
-    .contenedor-gral {
-      @include flexbox(row, flex-start, space-between);
-    }
-    .carta-contacto {
-      padding: 0px;
-      width: 30%;
-      align-items: center;
-      text-align: center;
-    }
-  }
-}
-
-//INICIO SECCION FORMULARIO PAG-SEC CONTACTO
 .formulario-contacto {
   background: $color-bg-white;
   .contenedor-gral {
@@ -1918,14 +1927,10 @@ a {
     border: none;
   }
 }
-//INICIO SECCION GOOGLE-MAP PAG-SEC CONTACTO
 .google-map-contacto {
   height: 500px;
   max-height: none;
 }
-
-//INICIO SECCION REDES PAG-SEC CONTACTO
-
 .redes-contacto {
   .contenedor-gral {
     max-width: 430px;
@@ -1951,68 +1956,57 @@ a {
     }
   }
 }
-.contenedor-main {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-.flotante-dark {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: calc(100% - 250px);
-  background: rgba(0, 0, 0, 0.479);
-  z-index: 99;
-  display: none;
-  opacity: 0;
-}
-@media (min-width: 550px) {
-  .flotante-dark {
-    width: calc(100% - 350px);
+
+//QUERYS PAG-SEC CONTACTO
+@media (min-width: 768px) {
+  .contenedor-cartas-contacto {
+    .contenedor-gral {
+      @include flexbox(row, flex-start, space-between);
+    }
+    .carta-contacto {
+      padding: 0px;
+      width: 30%;
+      align-items: center;
+      text-align: center;
+    }
   }
 }
 
 //INTERSECTION OBSERVER
-
-.animacion-uno {
-  position: relative;
-  left: -5px;
-  opacity: 0;
-  transition: all 0.2s;
-}
-.final-uno {
-  left: 0px;
-  opacity: 1;
-}
-.animacion-dos {
-  position: relative;
-  top: 5px;
-  opacity: 0;
-  transition: all 0.2s 0.2s;
-}
-.final-dos {
-  top: 0px;
-  opacity: 1;
-}
-.animacion-tres {
-  position: relative;
-  top: 5px;
-  opacity: 0;
-  transition: all 0.2s 0.3s;
-}
-.final-tres {
-  top: 0px;
-  opacity: 1;
-}
+.animacion-uno,
+.animacion-tres,
+.animacion-dos,
 .animacion-cuatro {
   position: relative;
-  top: 5px;
   opacity: 0;
   transition: all 0.3s;
 }
+.animacion-tres,
+.animacion-dos,
+.animacion-cuatro {
+  top: 5px;
+}
+.animacion-uno {
+  left: -5px;
+}
+.animacion-dos {
+  transition-delay: 0.2s;
+}
+.animacion-tres {
+  transition-delay: 0.4s;
+}
+
+.final-uno,
+.final-dos,
+.final-tres,
+.final-cuatro {
+  opacity: 1;
+}
+.final-dos,
+.final-tres,
 .final-cuatro {
   top: 0px;
-  opacity: 1;
+}
+.final-uno {
+  left: 0px;
 }

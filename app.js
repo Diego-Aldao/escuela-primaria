@@ -1,20 +1,4 @@
 window.onload = () => {
-  //MAPA LEAFLET
-  let map = L.map("map-leaflet").setView([-34.638434, -68.297539], 13);
-
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution:
-      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
-    maxZoom: 17,
-    tileSize: 512,
-    zoomOffset: -1,
-  }).addTo(map);
-
-  L.marker([-34.638434, -68.297539])
-    .addTo(map)
-    .bindPopup("ArcoirisKids<br> Jardin de Infantes")
-    .openPopup();
-
   //SCRIPTS NAV MOVIL
   const btnAbrirDesplegable = document.querySelector(".menu-hamburguesa");
   const desplegable = document.querySelector(".flotante-movil");
@@ -145,4 +129,20 @@ window.onload = () => {
   crearObservador(".animacion-dos", "final-dos");
   crearObservador(".animacion-tres", "final-tres");
   crearObservador(".animacion-cuatro", "final-cuatro");
+
+  //MAPA LEAFLET
+  let map = L.map("map-leaflet").setView([-34.638434, -68.297539], 13);
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    maxZoom: 17,
+    tileSize: 512,
+    zoomOffset: -1,
+  }).addTo(map);
+
+  L.marker([-34.638434, -68.297539])
+    .addTo(map)
+    .bindPopup("ArcoirisKids<br>Jardin de Infantes")
+    .openPopup();
 };
